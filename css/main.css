@@ -1,0 +1,277 @@
+/*
+[ FONTE ]*/
+
+@font-face {
+    font-family: BalooBhai;
+    src: url('../fonts/BalooBhai.ttf');
+}
+
+@font-face {
+    font-family: Balthazar-Regular;
+    src: url('../fonts/Balthazar-Regular.ttf');
+}
+
+@font-face {
+    font-family: Baloo2;
+    src: url('../fonts/Baloo2.ttf');
+}
+
+/*
+[ HOME ]*/
+
+#bg-home {
+    background-color: #1A1A1A;
+
+}
+
+.titulo-home {
+    vertical-align: middle;
+    padding: 225px 20px 0px 40px;
+    font-family: BalooBhai;
+    font-size: 85px;
+    color: #FFFFFF
+}
+
+.sub-home {
+    font-family: BalooBhai;
+    color: #04D361
+}
+
+.cpec-home {
+    display: block;
+    /*quebra de linha*/
+    font-size: 25px;
+    font-family: Balthazar-Regular;
+    color: #FFFFFF
+}
+
+.button-home {
+    position: relative;
+    left: 40px;
+    padding: 25px 20px 0px 40px;
+    font-family: Baloo2;
+    box-shadow: 2px 2px #5860D0;
+    text-shadow: 1.5px 1.5px #252525;
+    border: 0ch;
+    display: inline-block;
+    background-color: #707AFE;
+    border-radius: 10px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 32px;
+    padding: 12px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button-home span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-home span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.button-home:hover {
+    color: #707AFE;
+    background-color: #FFFFFF;
+
+    /* Passar o mouse sobre ele*/
+}
+
+.button-home:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button-home:active {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+[ HOME ]*/
+
+/*
+[ LOGIN ]*/
+
+#bg-login {
+    background-color: #1A1A1A;
+
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.login-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: #252525;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.card-header {
+    text-align: center;
+    font-family: BalooBhai;
+    font-size: 50px;
+    color: #fff;
+}
+
+.input-wrap{
+    position: relative;
+    height: 37px;
+    margin-bottom: 2rem;
+
+}
+
+.input-field {
+    font-family: BalooBhai;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border:none;   
+    outline: none;
+    border-bottom: 1px solid #bbb;
+    padding: 0;
+    font-size: .95rem;
+    color: #151111;
+    transition: 0.4s;
+}
+
+label{
+    font-family: BalooBhai;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .95rem;
+    color: #bbb;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.input-field.active {
+    color: #fff;
+    border-bottom-color: #707AFE;
+}
+
+.input-field.active +label {
+    color: #5860D0;
+    font-size: .75rem;
+    top: -2px;
+}
+
+#icon-eye{
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+    background: url('../img/eye.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#icon-eye.hide{
+    background: url('../img/eye-off.svg');
+    background-size: cover;
+}
+
+
+.ems {
+    font-family: BalooBhai;
+    color: #5860D0;
+    font-size: 14px;
+    position: relative;
+    left: 0px;
+    
+}
+
+.login-btn{
+    position: relative;
+    top: 60%;
+    left: 20%;
+    padding: 30px 30px 0px 40px;
+    font-family: Baloo2;
+    box-shadow: 2px 2px #5860D0;
+    text-shadow: 1.5px 1.5px #252525;
+    border: 0ch;
+    display: inline-block;
+    background-color: #707AFE;
+    border-radius: 10px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 32px;
+    padding: 0px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.login-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.login-btn span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    color: #707AFE;
+    background-color: #FFFFFF;
+
+    /* Passar o mouse sobre ele*/
+}
+
+.login-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.login-btn:active {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}
+
+.nu{
+    font-family: BalooBhai;
+    color: #FFFFFF;
+    font-size: 15px;
+    position: relative;
+    left: 0px;
+}
+
+.rs{
+    font-family: BalooBhai;
+    color: #04D361;
+    font-size: 15px;
+    position: relative;
+    left: 0px;
+}
+/*
+[ LOGIN ]*/
